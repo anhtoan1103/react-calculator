@@ -5,9 +5,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Create Next App",
-  description: "Generatfed by create next app",
+  title: "Toto Calculator",
+  description: "Calculator by Toto",
 };
+
+
 
 export default function RootLayout({
   children,

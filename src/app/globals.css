@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 0 ,0 ,0;
+  background-color: #f5f7ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +16,11 @@
 }
 
 body {
+  display: flex;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -30,4 +34,22 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.container {
+  
+  height: 600px;
+  max-width: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10%;
+  
+  display: flex;
+  flex-grow: 1;
+}
+
+.calculator {
+  width: auto;
+  display: flex;
 }
